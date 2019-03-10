@@ -1,0 +1,14 @@
+<view class="constellation">
+  <view class='text'>2019年你的星座运势</view>
+    <form bindsubmit='submitClick' class='form'>
+      <picker bindchange='picker' value='{{index}}' range="{{condata}}">
+        <view class='picker'>
+          {{condata[index]}}
+        </view>
+      </picker>
+      <button bindtap='startCheck' class='startTest' size='mini' type="warn" form-type='submit'>开始测试</button>
+    </form>
+    <view class='warn'>
+      {{warn}}
+    </view>
+</view>
